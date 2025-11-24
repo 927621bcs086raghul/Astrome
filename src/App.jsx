@@ -65,25 +65,7 @@ export default function App() {
         {/* If you used the earlier Sidebar component, it expects (mode, setMode) */}
         <Sidebar mode={mode} setMode={setMode} />
 
-        {/* Quick debug / small admin area (optional) */}
-        <div className="mt-6 text-sm text-gray-300">
-          <div className="mb-2">Towers: {towers.length}</div>
-          <div className="mb-2">Links: {links.length}</div>
-
-          {/* Optional: quick add button (handy for testing) */}
-          <button
-            className="mt-2 w-full py-2 rounded bg-blue-600 text-white"
-            onClick={() =>
-              addTower({
-                lat: 13.0827 + (Math.random() - 0.5) * 0.5,
-                lng: 80.2707 + (Math.random() - 0.5) * 0.5,
-                freq: 5,
-              })
-            }
-          >
-            Quick Add Tower
-          </button>
-        </div>
+        {/* Sidebar controls are above; removed debug counters and quick-add button */}
       </div>
 
       {/* Map area */}

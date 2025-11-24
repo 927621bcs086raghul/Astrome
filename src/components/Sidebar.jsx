@@ -3,7 +3,6 @@ export default function Sidebar({ mode, setMode }) {
     { key: "place", label: "Place Marker" },
     { key: "distance", label: "Distance Mode" },
     { key: "link", label: "Link Mode" },
-    { key: "clear", label: "Clear Map" },
   ];
 
   return (
