@@ -53,8 +53,10 @@ const slice = createSlice({
       if (state.fresnel[key]) delete state.fresnel[key];
     },
     setElevations(state, action) {
+      console.log('Setting elevations in slice');
       const { key, results } = action.payload;
       state.elevations[key] = results;
+      console.log(state.elevations);
     },
     setPlaceName(state, action) {
       const { key, name } = action.payload;
